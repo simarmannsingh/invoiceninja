@@ -18,12 +18,13 @@
 
         <div class="{{ $account && !$account->isPaid() ? 'col-span-2' : 'col-span-3' }} h-screen flex">
             <div class="m-auto md:w-1/2 lg:w-1/4">
-                @if($account && !$account->isPaid())
+                <!-- @if($account && !$account->isPaid())
                     <div>
                         <img src="{{ asset('images/invoiceninja-black-logo-2.png') }}"
                              class="border-b border-gray-100 h-18 pb-4" alt="Invoice Ninja logo" id="company_logo">
                     </div>
-                @elseif(isset($company) && !is_null($company))
+                @elseif(isset($company) && !is_null($company)) -->
+                @if(isset($company) && !is_null($company))
                     <div>
                         <img src="{{ $company->present()->logo()  }}"
                              class="mx-auto border-b border-gray-100 h-18 pb-4" alt="{{ $company->present()->name() }} logo">

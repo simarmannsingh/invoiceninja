@@ -5,12 +5,13 @@
 
     <div class="grid lg:grid-cols-12 py-8">
         <div class="col-span-12 lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4 px-6">
-            @if($register_company->account && !$register_company->account->isPaid())
+            <!-- @if($register_company->account && !$register_company->account->isPaid())
             <div class="flex justify-center">
                     <img src="{{ asset('images/invoiceninja-black-logo-2.png') }}"
                          class="border-b border-gray-100 h-18 pb-4" alt="Invoice Ninja logo">
                 </div>
-            @elseif(isset($register_company) && !is_null($register_company))
+            @elseif(isset($register_company) && !is_null($register_company)) -->
+            @if(isset($register_company) && !is_null($register_company))
             <div class="flex justify-center">
                     <img src="{{ $register_company->present()->logo()  }}"
                          class="mx-auto border-b border-gray-100 h-18 pb-4" alt="{{ $register_company->present()->name() }} logo">

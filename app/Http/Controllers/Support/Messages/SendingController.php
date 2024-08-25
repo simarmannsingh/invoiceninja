@@ -64,21 +64,21 @@ class SendingController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $request->validate([
-            'message' => ['required'],
-        ]);
+        // $request->validate([
+        //     'message' => ['required'],
+        // ]);
 
-        $send_logs = false;
+        // $send_logs = false;
 
-        if ($request->has('send_logs')) {
-            $send_logs = $request->input('send_logs');
-        }
+        // if ($request->has('send_logs')) {
+        //     $send_logs = $request->input('send_logs');
+        // }
 
-        Mail::to(config('ninja.contact.ninja_official_contact'))
-            ->send(new SupportMessageSent($request->all(), $send_logs));
+        // Mail::to(config('ninja.contact.ninja_official_contact'))
+        //     ->send(new SupportMessageSent($request->all(), $send_logs));
 
-        return response()->json([
-            'success' => true,
-        ], 200);
+        // return response()->json([
+        //     'success' => true,
+        // ], 200);
     }
 }

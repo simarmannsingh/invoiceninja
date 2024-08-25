@@ -61,8 +61,11 @@ All Pro and Enterprise features from the hosted app are included in the open-sou
 In addition to the official [Invoice Ninja - Self-Hosted Installation Guide](https://invoiceninja.github.io/en/self-host-installation/) we have a few commands for you.
 
 ```sh
+# clone the branch
 git clone --single-branch --branch v5-stable https://github.com/invoiceninja/invoiceninja.git
 cp .env.example .env
+
+# install dependencies
 composer i -o --no-dev
 ```
 

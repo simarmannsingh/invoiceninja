@@ -42,12 +42,13 @@
 
 <div class="flex flex-col justify-center items-center mt-10" id="container-fastlink">
     <div class="mb-4">
-        @if($account && !$account->isPaid())
+        <!-- @if($account && !$account->isPaid())
           <div class="max-h-28">
               <img src="{{ asset('images/invoiceninja-black-logo-2.png') }}"
                    class="border-b border-gray-100 h-18 pb-4" alt="Invoice Ninja logo">
-          </div>
-        @elseif(isset($company) && !is_null($company))
+          </div> -->
+        <!-- @elseif(isset($company) && !is_null($company)) -->
+        @if(isset($company) && !is_null($company))
           <div class="max-h-28">
               <img src="{{ $company->present()->logo()  }}"
                    class="mx-auto border-b border-gray-100 h-18 pb-4" style="max-width: 400px;" alt="{{ $company->present()->name() }} logo">

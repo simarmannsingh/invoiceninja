@@ -26,11 +26,11 @@
         </div>
     </section>
 
-    @if(auth()->guard('contact')->user()->user && !auth()->guard('contact')->user()->user->account->isPaid())
+    <!-- @if(auth()->guard('contact')->user()->user && !auth()->guard('contact')->user()->user->account->isPaid())
         <a href="https://invoiceninja.com" target="_blank">
             <img class="h-8" src="{{ asset('images/invoiceninja-black-logo-2.png') }}" alt="Invoice Ninja Logo">
         </a>
-    @endif
+    @endif -->
 
     @if(strlen($client->getSetting('client_portal_privacy_policy')) > 1)
         @component('portal.ninja2020.components.general.pop-up', ['title' => __('texts.privacy_policy') ,'show_property' => 'privacy'])

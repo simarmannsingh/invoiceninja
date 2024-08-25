@@ -275,7 +275,7 @@
                                     </table>
 
                                     <!-- Whitelabel logo -->
-                                    @isset($whitelabel)
+                                    <!-- @isset($whitelabel)
                                         @if(!$whitelabel)
                                             <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
                                                 <tbody>
@@ -297,7 +297,7 @@
                                                 </tbody>
                                             </table>
                                         @endif
-                                    @endisset
+                                    @endisset -->
 
                                     <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
                             </div>
